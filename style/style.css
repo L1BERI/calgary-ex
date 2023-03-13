@@ -330,7 +330,7 @@ html {
   padding: 24px 0;
   background: var(--color-white);
   width: 100%;
-  z-index: 1000;
+  z-index: 3000;
   top: -128px;
   transition: all 0.5s;
 }
@@ -1034,7 +1034,7 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 4000;
+    z-index: 2000;
     transition: all 0.3s;
     visibility: hidden;
   }
@@ -1066,6 +1066,7 @@ html {
   .mobile-active {
     visibility: visible;
     top: 0;
+    bottom: 0;
     transition: all 0.3s;
   }
   .mobile-menu__list {
