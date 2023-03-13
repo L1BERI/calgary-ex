@@ -8,6 +8,20 @@ let mobileMenu = document.querySelector('.mobile-menu');
 let headerHeight = headerUpper.offsetHeight;
 let bodyScroll = document.querySelector('.body');
 
+window.onload= function(){
+    if (window.scrollY < headerHeight) {
+        stickyheader.classList.remove('sticky-active');
+        stickyLogo.classList.remove('hidden-logo');
+        burgerMenu.classList.remove('burger-pos');
+        burgerMenu.classList.add('burger')
+        
+    } else {
+        stickyheader.classList.add('sticky-active');
+        stickyLogo.classList.add('hidden-logo');
+        burgerMenu.classList.add('burger-pos');
+        burgerMenu.classList.remove('burger')
+    }
+}
 
 window.addEventListener('scroll', function () {
     if (window.scrollY < headerHeight) {
