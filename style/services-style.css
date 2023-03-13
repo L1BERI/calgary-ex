@@ -1,0 +1,29 @@
+.sticky-menu__item:first-child {
+  color: var(--color-night);
+}
+.sticky-menu__item:nth-child(2) {
+  color: var(--color-red);
+}
+.sticky-menu__item:hover {
+  color: var(--color-red);
+}
+.sticky-menu__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav__menu-item:first-child {
+  color: var(--color-night);
+}
+.nav__menu-item:nth-child(2) {
+  color: var(--color-red);
+}
+
+.footer__menu-item a[href="services.html"] {
+  color: var(--color-red);
+}
+.footer__menu-item a[href="index.html"] {
+  color: var(--color-white);
+}
+.footer__menu-item a[href="index.html"]:hover {
+  color: var(--color-red);
+}/*# sourceMappingURL=services-style.css.map */

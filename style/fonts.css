@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-SemiBold.eot');
+    src: url('../fonts/Manrope-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.eot');
+    src: url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-ExtraBold.eot');
+    src: url('../fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-Regular.eot');
+    src: url('../fonts/RobotoMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoMono-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoMono-Regular.woff') format('woff'),
+        url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

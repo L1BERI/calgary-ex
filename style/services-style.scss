@@ -1,0 +1,38 @@
+.sticky-menu__item {
+    &:first-child {
+        color: var(--color-night);
+    }
+    
+    &:nth-child(2){
+        color: var(--color-red);
+    }
+    &:hover {
+        color: var(--color-red);
+    }
+
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+.nav__menu-item {
+    &:first-child {
+        color: var(--color-night);
+    }
+    
+    &:nth-child(2){
+        color: var(--color-red);
+    }
+}
+
+.footer__menu-item {
+    a[href="services.html"]{
+        color: var(--color-red);
+    }
+    a[href="index.html"]{
+        color: var(--color-white);
+        &:hover{
+            color: var(--color-red);
+        }
+    }
+}
