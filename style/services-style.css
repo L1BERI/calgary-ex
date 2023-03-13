@@ -26,4 +26,13 @@
 }
 .footer__menu-item a[href="index.html"]:hover {
   color: var(--color-red);
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-menu__item:first-child {
+    color: var(--color-night);
+  }
+  .mobile-menu__item:nth-child(2) {
+    color: var(--color-red);
+  }
 }/*# sourceMappingURL=services-style.css.map */

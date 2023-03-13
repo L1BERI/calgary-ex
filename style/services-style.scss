@@ -36,3 +36,14 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+.mobile-menu__item {
+    &:first-child{
+        color: var(--color-night);
+    }
+    &:nth-child(2) {
+        color: var(--color-red);
+    }
+}
+}

@@ -315,7 +315,7 @@ padding-top: 80px;
     }
 }
 .footer{
-    padding: 64px 0;
+    padding: 46px 0;
     @media screen and (max-width: 480px){
         padding: 40px 0;
     }
@@ -432,7 +432,7 @@ padding-top: 80px;
 .header__shedule {
     color: var(--color-blue-60);
     display: flex;
-    span{
+    span:not(:first-child){
         color: var(--color-white);
     }
     &::before{
@@ -1121,18 +1121,19 @@ padding-top: 80px;
     }
 
     .mobile-menu__item {
-        color: var(--color-ocean);
+        color: var(--color-night);
 
         &:not(:last-child) {
             margin-bottom: 40px;
         }
+        &:first-child {
+            color: var(--color-red);
+        }
+    
+        &:hover {
+            color: var(--color-red);
+        }
     }
-
-    .mobile-menu__link {}
-
-
-
-   
     .mobile__contants {
         background: var(--color-ocean);
         width: 100%;
@@ -1198,6 +1199,11 @@ padding-top: 80px;
             position: absolute;
             left: -72px;
         }
+        span{
+            &:not(:last-child){
+                margin-bottom: 4px;
+            }
+        }
     }
     .header__phone{
         position: relative;
@@ -1213,8 +1219,9 @@ padding-top: 80px;
     .hero__inner{
         flex-direction: column;
         background: none;
-        
+        padding-top: 0;
     }
+    
     .hero__content{
         background: var(--color-ocean-16);
         margin: 0 auto 24px auto;
@@ -1316,6 +1323,9 @@ padding-top: 80px;
     }
     .burger-active{
         top: 36px;
+    }
+    .header__upper-inner{
+        justify-content: center;
     }
     .heating__content{
         padding-bottom: 40px;
