@@ -395,6 +395,65 @@ padding-top: 80px;
     &:not(:last-child) {
         margin-right: 32px;
     }
+    
+    a[href="services.html"]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            transition: all .3s;
+        }
+        &:hover{
+            svg{
+                transition: all .3s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dropdown-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    position: absolute;
+    top: 19px;
+    left: -10px;
+    z-index: 2;
+    width: 105px;
+    background: var(--color-white);
+    border-bottom-left-radius: 12px ;
+    border-bottom-right-radius: 12px;
+    padding: 4px 10px;
+    transform: scale(0);
+    transition: all .3s;
+    transform-origin: top center;
+    color: var(--color-night);
+    a:hover{
+        color: var(--color-red);
+    }
+    a{
+        transform: translateY(-220%);
+        transition: all .5s;
+    }
+}
+.dropdown-menu:hover{
+    .dropdown-list{
+    display: flex;
+    transform: scale(1);
+    a{
+        transform: translateY(0);
+        transition: all .5s;
+    }
+    }
+}
+.dropdown-item:not(:last-child){
+    margin-bottom: 2px;
 }
 
 // =================== HEADER ===================
@@ -482,8 +541,23 @@ padding-top: 80px;
     &:hover{
         color: var(--color-red)
     }
+    a[href="services.html"]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            transition: all .3s;
+        }
+        &:hover{
+            svg{
+                transition: all .3s;
+                transform: rotate(180deg);
+            }
+        }
+    }
 }
 .nav__menu-link {
+    
 }
 
 // MAIN
@@ -1119,7 +1193,18 @@ padding-top: 80px;
         overflow-y: scroll;
         -webkit-overflow-scrolling:touch;
     }
-
+    .dropdown-list{
+        width: 130px;
+        position: relative;
+        left: 0;
+        top: 0px;
+        font-size: 0.8rem;
+        display: flex;
+        transform: scale(1);
+        a{
+            transform: translateY(0);
+        }
+    }
     .mobile-menu__item {
         color: var(--color-night);
 

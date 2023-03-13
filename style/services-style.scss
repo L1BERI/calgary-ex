@@ -13,15 +13,46 @@
     &:not(:last-child) {
         margin-right: 32px;
     }
+    a[href="services.html"]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            transition: all .3s;
+        }
+        &:hover{
+            svg{
+                transition: all .3s;
+                transform: rotate(180deg);
+            }
+        }
+    }
 }
 
 .nav__menu-item {
     &:first-child {
         color: var(--color-night);
+        &:hover{
+            color: var(--color-red);
+        }
     }
     
     &:nth-child(2){
         color: var(--color-red);
+    }
+    a[href="services.html"]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            transition: all .3s;
+        }
+        &:hover{
+            svg{
+                transition: all .3s;
+                transform: rotate(180deg);
+            }
+        }
     }
 }
 

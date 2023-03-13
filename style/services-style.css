@@ -10,12 +10,39 @@
 .sticky-menu__item:not(:last-child) {
   margin-right: 32px;
 }
+.sticky-menu__item a[href="services.html"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticky-menu__item a[href="services.html"] svg {
+  transition: all 0.3s;
+}
+.sticky-menu__item a[href="services.html"]:hover svg {
+  transition: all 0.3s;
+  transform: rotate(180deg);
+}
 
 .nav__menu-item:first-child {
   color: var(--color-night);
 }
+.nav__menu-item:first-child:hover {
+  color: var(--color-red);
+}
 .nav__menu-item:nth-child(2) {
   color: var(--color-red);
+}
+.nav__menu-item a[href="services.html"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__menu-item a[href="services.html"] svg {
+  transition: all 0.3s;
+}
+.nav__menu-item a[href="services.html"]:hover svg {
+  transition: all 0.3s;
+  transform: rotate(180deg);
 }
 
 .footer__menu-item a[href="services.html"] {

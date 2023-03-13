@@ -384,6 +384,63 @@ html {
 .sticky-menu__item:not(:last-child) {
   margin-right: 32px;
 }
+.sticky-menu__item a[href="services.html"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticky-menu__item a[href="services.html"] svg {
+  transition: all 0.3s;
+}
+.sticky-menu__item a[href="services.html"]:hover svg {
+  transition: all 0.3s;
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  position: absolute;
+  top: 19px;
+  left: -10px;
+  z-index: 2;
+  width: 105px;
+  background: var(--color-white);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 4px 10px;
+  transform: scale(0);
+  transition: all 0.3s;
+  transform-origin: top center;
+  color: var(--color-night);
+}
+.dropdown-list a:hover {
+  color: var(--color-red);
+}
+.dropdown-list a {
+  transform: translateY(-220%);
+  transition: all 0.5s;
+}
+
+.dropdown-menu:hover .dropdown-list {
+  display: flex;
+  transform: scale(1);
+}
+.dropdown-menu:hover .dropdown-list a {
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
+.dropdown-item:not(:last-child) {
+  margin-bottom: 2px;
+}
 
 .header__upper {
   background: var(--color-ocean);
@@ -467,6 +524,18 @@ html {
 }
 .nav__menu-item:hover {
   color: var(--color-red);
+}
+.nav__menu-item a[href="services.html"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__menu-item a[href="services.html"] svg {
+  transition: all 0.3s;
+}
+.nav__menu-item a[href="services.html"]:hover svg {
+  transition: all 0.3s;
+  transform: rotate(180deg);
 }
 
 .hero__inner {
@@ -1076,6 +1145,18 @@ html {
     margin-top: 56px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+  .dropdown-list {
+    width: 130px;
+    position: relative;
+    left: 0;
+    top: 0px;
+    font-size: 0.8rem;
+    display: flex;
+    transform: scale(1);
+  }
+  .dropdown-list a {
+    transform: translateY(0);
   }
   .mobile-menu__item {
     color: var(--color-night);
